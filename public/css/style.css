@@ -1,0 +1,580 @@
+body { padding-top: 50px; }
+/*#####################
+Additional Styles (required)
+######################*/
+#myCarousel .thumbnail {
+	margin-bottom: 0;
+}
+.carousel-control.left, .carousel-control.right {
+	background-image:none !important;
+}
+.carousel-control {
+	color:#fff;
+	top:40%;
+	color:#428BCA;
+	bottom:auto;
+	padding-top:4px;
+	width:30px;
+	height:30px;
+	text-shadow:none;
+	opacity:1;
+}
+.carousel-control:hover {
+	color: #d9534f;
+}
+.carousel-control.left, .carousel-control.right {
+	background-image:none !important;
+}
+.carousel-control.right {
+	left:auto;
+	right:-32px;
+}
+.carousel-control.left {
+	right:auto;
+	left:-32px;
+}
+.carousel-indicators {
+	bottom:-30px;
+}
+.carousel-indicators li {
+	border-radius:0;
+	width:10px;
+	height:10px;
+	background:#ccc;
+	border:1px solid #ccc;
+}
+.carousel-indicators .active {
+	width:12px;
+	height:12px;
+	background:#3276b1;
+	border-color:#3276b1;
+}
+
+.bestseller-h3-tag {
+
+	float: right;
+	margin-right: 20px;
+	font-weight: bold;
+
+}
+
+.bestseller-view-all {
+
+	float: right;
+    margin-top: 32px;
+
+}
+
+.bold {
+
+	font-weight: bold;
+
+}
+
+.text-align-center {
+
+	text-align: center;
+
+}
+
+.thumbnail {
+  position: relative;
+
+}
+
+.bestseller {
+
+	margin-top: 50px;
+
+}
+
+.bestseller-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.thumbnail:hover .bestseller-image {
+  opacity: 0.3;
+}
+
+.thumbnail:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #94E1DB;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* === card component ====== 
+ * Variation of the panel component
+ * version 2018.10.30
+ * https://codepen.io/jstneg/pen/EVKYZj
+ */
+.card{ background-color: #fff; border: 1px solid transparent; border-radius: 6px; }
+
+.card .card-body{ display: table; width: 100%; padding: 12px; background-color: white; }
+
+
+.card .card-body .lead{ 
+	text-align: left; 
+	font-weight: bold;
+    font-size: 17px;
+    font-family: system-ui;}
+
+
+
+/* -- price theme ------ */
+.card-price{ 
+
+	border-color: #999; 
+	background-color: white; 
+	margin-bottom: 24px; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: none;
+
+}
+
+
+.card-price .price{ 
+  text-align: center; 
+  color: #337ab7; 
+  font-size: 3em; 
+  text-transform: uppercase;
+  line-height: 0.7em; 
+  margin: 24px 0 16px;
+}
+
+.img-responsive {
+
+	border-radius: 8%;
+
+}
+
+
+.news-and-events {
+
+	margin-top: 65px;
+
+}
+
+.news-caption {
+
+	font-family: sans-serif;
+	margin-bottom: 20px;
+	text-align: center;
+
+}
+
+.height-35 {
+
+	height: 35px;
+
+}
+
+.font-size-12 {
+
+	font-size: 12px;
+
+}
+
+.view-all-btn-div {
+
+	text-align: center;
+}
+
+.view-all-btn {
+
+	/*border-radius: 20%;*/
+	margin-bottom: 20px;
+	margin-top: 25px;
+	background-color: #7D3C98;
+	color: white;
+
+}
+
+.daily-essential {
+
+	margin-top: 50px;
+
+}
+
+.product-label {
+  position: absolute;
+  bottom: 8px;
+  left: 30%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 50%;
+  color: black;
+}
+
+.diaries {
+
+	margin-top: 50px;
+
+}
+
+.diaries-caption {
+
+	font-family: monospace;	
+
+}
+
+.well {
+
+	border: none !important;
+	background-color: white !important;
+
+}
+
+.footer {
+
+	margin-top: 50px;
+	background-color: #2E4053;
+	/*margin-bottom: 100px;*/
+
+}
+
+.fas {
+
+	color: white !important;
+
+}
+
+.discount-cap {
+
+	color: white;
+	font-size: 12px;
+}
+
+.pad-20 {
+
+	padding: 20px;
+
+}
+
+.email-input {
+
+	background-color: #2E4053;
+	margin-top: 5px;
+
+}
+
+.send-btn {
+
+	background-color: #2E4053;
+	border-color: white;
+
+}
+
+.mar-5px {
+
+	margin-top: 12px;
+
+}
+
+.footer-image {
+
+	height: 65px;
+	width: 182px;
+
+}
+
+.width-100 {
+
+	width: 100%;
+
+}
+
+
+.footer-3 {
+
+	margin-bottom: 30px;
+
+}
+
+.footer-2 {
+
+	background-color: #E5E8E8;
+
+}
+
+.circel-font {
+
+	background: #F808A8;
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 10px;
+
+}
+
+.bold {
+
+	font-weight: bold;
+
+}
+
+.color-red {
+
+	color: red !important;
+
+}
+
+.font-11 {
+
+	font-size: 11px;
+	font-weight: bold;
+
+}
+
+.float-right {
+
+	float: right;
+
+}
+
+.navbar-brand {
+
+	font-weight: bold;
+	font-size: 32px;
+	font-family: system-ui;
+	color: black !important;	
+
+}
+
+.navbar-default {
+
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* Styles for wrapping the search box */
+
+.main {
+
+    margin-top: 10px;
+
+}
+
+/* Bootstrap 3 text input with search icon */
+
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+.color-black {
+
+	color: black !important;
+
+}
+
+.margin-18 {
+
+	margin-top: 18px;
+
+}
+
+.fa-lock {
+
+	margin-left: 10px;
+	font-size: 20px;
+
+}
+
+.product {
+
+	background-color: #E5E8E8;
+	padding: 80px;
+
+}
+
+.product-cap {
+
+	font-size: 30px;
+
+}
+
+.margin-top-10 {
+
+	margin-top: 10px;
+
+}
+
+
+.vertical-menu {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 52px;
+  background-color: #1C2833;
+}
+
+.vertical-menu a {
+  background-color: #1C2833;
+  color: white;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	/*padding: 16px;*/
+}
+
+.vertical-menu a:hover {
+  background-color: #5D6D7E;
+}
+
+.vertical-menu a.active {
+  background-color: #5D6D7E;
+  color: white;
+}
+
+.mid-menu {
+
+	background-color: white;	
+	padding-bottom: 50px;
+
+}
+
+.left-menu {
+
+	padding-right: 0px !important; 
+
+}
+
+.margin-top-40 {
+
+	margin-top: 40px;
+
+}
+
+.sanchay-div {
+
+	margin-top: 50px;
+	margin-left: 25px;
+
+}
+
+.sanchay-cap {
+
+	font-size: 25px;
+	font-weight: bold;
+
+}
+
+.details {
+
+	color: black;
+	float: right;
+
+}
+
+.appoinment-btn {
+
+	margin-left: 50px;
+	background-color: #F1C40F;
+	color: white;
+	font-weight: bold;
+
+}
+
+.right-menu {
+
+	padding-left: 0px !important;
+
+}
+
+.right-menu img {
+
+	height: 100%;
+
+}
+
+.padding-30 {
+
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.calculator {
+
+	padding: 30px;
+	background-color: aliceblue;
+
+}
+
+.fa-black {
+
+	color: black !important;
+
+}
+
+.policy {
+
+	padding: 30px;
+	background-color: antiquewhite;
+	margin-left: 10px;
+
+}
+
+.transaction {
+
+	padding: 30px;
+	background-color: darksalmon;
+	margin-left: 10px;
+
+}
+
+.plan-image {
+
+	width: 100%;
+
+}
+
+.search-btn {
+
+	color: white;
+	background-color: #E67E22;
+}
+
+
+.margin-color {
+
+	margin-left: 18px;
+	color: #E67E22 !important;
+
+}
+
+
+.box-shadow {
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 5px;
+}
