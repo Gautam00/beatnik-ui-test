@@ -15,45 +15,44 @@
 
         {{-- js --}}
         <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        {{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --}}
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
         <!-- Styles -->
         
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
+        
+        <div class="container">
+            <div class="row">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+                @include('partials.header')
 
-            <div class="container">
-                <div class="row">
+                @include('layouts.home')
+                @include('layouts.product')
+                @include('layouts.bestseller')
+                @include('layouts.news_and_events')
+                @include('layouts.daily_essentials')
+                @include('layouts.diaries')
 
-                    @include('partials.header')
+                @include('partials.footer')
 
-                    @include('layouts.home')
-                    @include('layouts.product')
-                    @include('layouts.bestseller')
-                    @include('layouts.news_and_events')
-                    @include('layouts.daily_essentials')
-                    @include('layouts.diaries')
-
-                    @include('partials.footer')
-
-                </div>
             </div>
-
         </div>
+
     </body>
+
 </html>
+
+
+<script>
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(51.508742,-0.120850),
+            zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoJh-qmRgVOoQvlTB2DmPJ0a4bgHFR9XI&callback=myMap"></script>

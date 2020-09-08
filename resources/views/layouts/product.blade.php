@@ -32,7 +32,7 @@
 						<div class="margin-top-40">
 							
 							<span>Calculate Premium</span>
-							<a type="button" class="btn appoinment-btn">Book an Appoinment</a>
+							<a type="button" class="btn appoinment-btn" data-toggle="modal" data-target="#appoinmentModal">Book an Appoinment</a>
 
 						</div>
 
@@ -60,4 +60,36 @@
 
 	</div>
 
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="appoinmentModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Appoinment</h4>
+        </div>
+        <form method="post" action="{{ route('appoinment') }}" >
+	        
+	        <div class="modal-body">
+	          
+			    @csrf
+				
+				Name: <input type="text" name="name">
+				Email: <input type="email" name="email">
+	        </div>
+
+	        <div class="modal-footer">
+	          <button type="submit" class="btn btn-success">Send</button>
+	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        </div>
+
+		</form>
+      </div>
+      
+    </div>
 </div>

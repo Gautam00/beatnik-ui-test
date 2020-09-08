@@ -41,11 +41,31 @@
           </div>
 
 
-          <div class="col-md-2 margin-18">
+          <div class="col-md-2 margin-18 dropdown">
             
-            <i class="fas fa-user color-black"></i>
-            <span>Account</span>
-            <i class="fas fa-lock color-black"></i>
+            @auth
+
+              <i class="fas fa-user color-black"></i>
+              <span>{{ Auth::user()->name }}</span>
+
+              <div class="dropdown-content">
+                <a href="{{ url('/logout') }}">Logout</a>
+              </div>
+
+            @else
+
+              <i class="fas fa-user color-black"></i>
+              <span>Account</span>
+              <i class="fas fa-lock color-black"></i>
+
+              <div class="dropdown-content">
+                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ route('register') }}">Register</a>
+              </div>
+
+            @endauth
+
+            
 
           </div>
 

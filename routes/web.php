@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::post('/discount', 'MainController@discount')->name('discount');
+Route::post('/appoinment', 'MainController@appoinment')->name('appoinment');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

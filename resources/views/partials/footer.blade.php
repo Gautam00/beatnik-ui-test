@@ -14,9 +14,15 @@
 					<span class="discount-cap">GET SPECIAL DISCOUNT IN YOUR INBOX</span>
 
 					<div class="mar-5px">
+
+						<form method="post" action="{{ route('discount') }}" >
+
+        			    	@csrf
 						
-						<input class="email-input" type="mail" name="email" placeholder="Enter your email address">
-						<button type="button" class="btn btn-success send-btn">Send</button>
+							<input class="email-input" type="mail" name="email" placeholder="Enter your email address">
+							<button type="submit" class="btn btn-success send-btn">Send</button>
+
+						</form>
 
 					</div>
 
@@ -127,7 +133,7 @@
 	
 		<div class="col-md-12">
 				
-			<img class="width-100" src="{{ asset('image/map2.jpg') }}" alt="Slide">
+			<div id="googleMap" style="width:100%;height:200px;"></div>
 
 		</div>
 
